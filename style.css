@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(to left top, #051937, #133664, #1f5795, #247bc9, #1ca1ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    width: 300px;
+    height: 250px;
+    background: #ffff;
+    border: 5px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Righteous', cursive;
+}
+
+.left, .right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    flex-direction: column;
+}
+
+.left {
+    width: 58%;
+    background: #051937;
+}
+
+.right {
+    background: #1CA1FF;
+    width: 42%;
+    border-radius: 0 6px 6px 0;
+}
+
+#clock-hour, #clock-min {
+    margin: 10px;
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    color: #fff;
+}
+
+
+@media (max-width: 434px) {
+    .calendar {
+        width: 250px;
+        height: 200px;
+    }
+    
+    .left, .right {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 343px) {
+    .calendar {
+        width: 250px;
+        height: 150px;
+    }
+    .left, .right {
+        font-size: 12px;
+    }
+}
